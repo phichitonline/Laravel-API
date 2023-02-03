@@ -23,13 +23,13 @@ use App\Http\Controllers\Api\UserlistController;
 // });
 
 Route::post('login', [AuthController::class, 'login']);
-Route::apiResource('user', UserController::class);
 
 
 // Protected route group
 Route::group(['middleware' => 'auth:sanctum'], function() {
 
     Route::post('userlist', [UserlistController::class, 'userlist']);
+    Route::apiResource('user', UserController::class);
 
     Route::post('register', [AuthController::class, 'register']);
     Route::post('logout', [AuthController::class, 'logout']);

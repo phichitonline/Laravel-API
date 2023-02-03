@@ -1,5 +1,7 @@
 @extends('layouts.theme')
 
+@section('title', 'User Manager')
+
 @section('content')
 
     <!-- Quote Start -->
@@ -68,4 +70,4 @@
     </div>
     <!-- Quote Start -->
 
-    @endsection
+@endsection

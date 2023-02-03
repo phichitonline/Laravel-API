@@ -16,7 +16,7 @@ use App\Http\Controllers\GetuserController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::resource('user', UserController::class);
